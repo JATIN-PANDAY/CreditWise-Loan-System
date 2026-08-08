@@ -294,12 +294,6 @@ DEBUG=true
   </tr>
 </table>
 
-### Contributors
-
-Thanks to all the amazing contributors who have helped make this project better!
-
-[![Contributors](https://contrib.rocks/image?repo=username/repo)](https://github.com/username/repo/graphs/contributors)
-
 ## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
@@ -339,10 +333,7 @@ Some dependencies may be under different licenses:
 
 ## Demo
 
-🚀 [Live Demo](https://your-demo-url.com)
-
-![Demo GIF](https://via.placeholder.com/600x300?text=Demo+GIF)
-
+🚀 [
 ## Table of Contents
 
 - [Installation](#installation)
@@ -380,4 +371,4 @@ Made with ❤️ by [JATIN-PANDAY](https://github.com/JATIN-PANDAY)
 
 </div>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto&weight=900&size=30&duration=3000&pause=1000&color=0981F7&background=FFFFFF00&center=true&vCenter=true&width=1245&lines=Front-End+Web+Developer;React+Developer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto&weight=900&size=30&duration=3000&pause=1000&color=0981F7&background=FFFFFF00&center=true&vCenter=true&width=1245&lines=ML+Engineer;Backend+Developer)](https://git.io/typing-svg)
