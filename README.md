@@ -204,74 +204,11 @@ There are no explicit test files detected. For contributions, it is recommended 
 
 This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-## Screenshots
-
-### Main Interface
-![Main Interface](https://via.placeholder.com/800x400?text=Main+Interface)
-
-### Settings Panel
-![Settings](https://via.placeholder.com/800x400?text=Settings+Panel)
-
-### Mobile View
-![Mobile](https://via.placeholder.com/400x600?text=Mobile+View)
-
-## Requirements
-
-- Node.js >= 16.0.0
-- npm >= 8.0.0
-- Modern browser with ES6+ support
-
 ### System Requirements
 
 - **OS:** Windows 10+, macOS 10.15+, Ubuntu 18.04+
 - **Memory:** 4GB RAM minimum, 8GB recommended
 - **Storage:** 100MB free space
-
-## Configuration
-
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `apiKey` | string | `null` | Your API key for authentication |
-| `timeout` | number | `5000` | Request timeout in milliseconds |
-| `retries` | number | `3` | Number of retry attempts |
-| `debug` | boolean | `false` | Enable debug logging |
-| `baseUrl` | string | `"https://api.example.com"` | Base URL for API calls |
-
-### Environment Variables
-
-```bash
-API_KEY=your_api_key_here
-TIMEOUT=10000
-DEBUG=true
-```
-
-## Changelog
-
-### [1.0.0] - 2024-01-15
-
-#### Added
-- Initial release
-- Core functionality
-- Basic API
-- Documentation
-
-#### Changed
-- N/A
-
-#### Fixed
-- N/A
-
-### [0.9.0] - 2023-12-20
-
-#### Added
-- Beta release
-- Testing framework
-
-#### Fixed
-- Various bug fixes
-- Performance improvements
 
 ## License
 
