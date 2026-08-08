@@ -273,27 +273,6 @@ DEBUG=true
 - Various bug fixes
 - Performance improvements
 
-## Team
-
-### Core Team
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://github.com/username1.png" width="100px" alt=""/><br />
-      <b>John Doe</b><br />
-      <i>Lead Developer</i><br />
-      <a href="https://github.com/username1">GitHub</a>
-    </td>
-    <td align="center">
-      <img src="https://github.com/username2.png" width="100px" alt=""/><br />
-      <b>Jane Smith</b><br />
-      <i>UI/UX Designer</i><br />
-      <a href="https://github.com/username2">GitHub</a>
-    </td>
-  </tr>
-</table>
-
 ## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
@@ -331,9 +310,6 @@ Some dependencies may be under different licenses:
 - [Contributing](#contributing)
 - [License](#license)
 
-## Demo
-
-🚀 [
 ## Table of Contents
 
 - [Installation](#installation)
