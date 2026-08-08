@@ -294,7 +294,7 @@ Some dependencies may be under different licenses:
 
 ---
 
-**Made with ❤️ by [Your Name](https://github.com/username)**
+**Made with ❤️ by [JATIN-PANDAY](https://github.com/JATIN-PANDAY)**
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-green.svg)]()
