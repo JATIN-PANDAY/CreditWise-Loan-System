@@ -11,7 +11,7 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 import seaborn as sns
 import matplotlib.pyplot as plt
-
+import pickle
 
 df = pd.read_csv("loan_approval_data.csv")
 categorical_cols = df.select_dtypes(include=["object"]).columns
@@ -33,10 +33,12 @@ ax = sns.barplot(x=plot.index, y=plot.values)
 
 ## Feature Engineering
 
-le = LabelEncoder()
+le_education = LabelEncoder()
 
-df["Education_Level"] = le.fit_transform(df['Education_Level'])
-df['Loan_Approved'] = le.fit_transform(df['Loan_Approved'])
+df["Education_Level"] = le_education.fit_transform(df['Education_Level'])
+
+le_approved = LabelEncoder()
+df['Loan_Approved'] = le_approved.fit_transform(df['Loan_Approved'])
 
 cols = ["Employment_Status","Marital_Status",'Loan_Purpose','Property_Area','Gender','Employer_Category']
 ohe = OneHotEncoder(drop="first", sparse_output=False , handle_unknown ='ignore')
@@ -49,12 +51,14 @@ encoded_df = pd.DataFrame(
                         index=df.index
                         )
 # print(encoded_df.head())
-df =pd.concat([df.drop(columns=cols),encoded_df],axis=1)
+df = pd.concat([df.drop(columns=cols),encoded_df],axis=1)
 
 ## Feature Scaling
 
 X = df.drop(columns=["Applicant_ID","Loan_Approved"])
 y = df['Loan_Approved']
+
+model_columns = list(X.columns)
 
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42)
@@ -88,5 +92,18 @@ naive_accuracy = accuracy_score(y_test,y_pre)
 print("Accuracy Score For Naive :", naive_accuracy)
 print(f'Precision Score For Naive',precision_score(y_test, y_predict))
 
+# 8. EXPORT ARTIFACTS FOR STREAMLIT FRONTEND
+print("Saving model and encoders to .pkl files...")
+with open('loan_model.pkl', 'wb') as f:
+    pickle.dump(model, f)
+with open('scaler.pkl', 'wb') as f:
+    pickle.dump(scaler, f)
+with open('ohe.pkl', 'wb') as f:
+    pickle.dump(ohe, f)
+with open('le_education.pkl', 'wb') as f:
+    pickle.dump(le_education, f)
+with open('model_columns.pkl', 'wb') as f:
+    pickle.dump(model_columns, f)
 
+print("Export Complete! You can now run aap.py")
 
